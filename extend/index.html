@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.50">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-41480445-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+<title data-react-helmet="true">Extend - Pure</title>
+
+<meta data-react-helmet="true" charset="utf-8"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-react-helmet="true" property="og:title" content="Extend - Pure"><meta data-react-helmet="true" name="description" content="Build on top of Pure."><meta data-react-helmet="true" property="og:description" content="Build on top of Pure."><meta data-react-helmet="true" name="twitter:card" content="summary_large_image">
+
+<link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+
+
+<link rel="stylesheet" href="/styles.35eb99fd.css">
+
+
+<link rel="preload" href="/styles.4d4e0bac.js" as="script">
+
+<link rel="preload" href="/runtime~main.9a1ae503.js" as="script">
+
+<link rel="preload" href="/main.fc1c45a0.js" as="script">
+
+<link rel="preload" href="/common.5d6269e6.js" as="script">
+
+<link rel="preload" href="/982b1836.a0369f57.js" as="script">
+
+</head>
+<body>
+
+<div id="__docusaurus">
+<div id="layout"><a href="#menu" id="menuLink" class="menu-link"><span></span></a><div id="menu"><div class="pure-menu"><a aria-current="page" class="pure-menu-heading active" href="/">Pure</a><ul class="pure-menu-list"><li class="pure-menu-item"><a class="pure-menu-link" href="/start/">Get Started</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/layouts/">Layouts</a></li><li class="pure-menu-item menu-item-divided"><a class="pure-menu-link" href="/base/">Base</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/grids/">Grids</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/forms/">Forms</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/buttons/">Buttons</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/tables/">Tables</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/menus/">Menus</a></li><li class="pure-menu-item menu-item-divided"><a class="pure-menu-link" href="/tools/">Tools</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/customize/">Customize</a></li><li class="pure-menu-item"><a aria-current="page" class="pure-menu-link active" href="/extend/">Extend</a></li><li class="pure-menu-item"><a href="http://blog.purecss.io/" class="pure-menu-link">Blog</a></li><li class="pure-menu-item"><a href="https://github.com/pure-css/pure/releases/" class="pure-menu-link">Releases</a></li></ul></div></div><div id="main" class="extend"><div class="header"><h1>Extend</h1><h2>Build on top of Pure.</h2></div><div class="content"><p>One of our goals when developing Pure was to make it extremely extensible. By including Pure and writing some CSS on top of it, you can ensure that your site or app works across browsers, while looking truly unique. Best of all, your CSS file size will remain tiny, which is a great thing for mobile users and others with slow connections.</p><aside><p>Want a quick start? Take a look at some <a href="/layouts/">layouts</a> that we&#x27;ve built on top of Pure.</p></aside><h2 id="style-guide" class="content-subhead">Style Guide<a href="#style-guide" class="content-link" title="Heading anchor"></a></h2><h3>Based on SMACSS</h3><p>Pure is broken up into a set of responsive modules. From the beginning, we adopted <a href="http://smacss.com/">SMACSS</a> as a convention for writing our CSS. For those who are new to SMACSS, you should give it a quick read, especially the section on <a href="http://smacss.com/book/type-module">module rules</a>.</p><h3>Class Name Conventions</h3><p>One of the conventions in Pure is for every module to have a standard class name for common rules across a module, and then have additional class names for specific presentational rules for a specific sub-module. All classes start with a <code>pure-</code> prefix to prevent collisions. In addition, we try not to have presentational class names. Instead of calling something <code>pure-form-horizontal</code>, we prefer to call it <code>pure-form-aligned</code>. This prevents a tight coupling between class names and styles, which is good for maintainability.</p><p>For example, let&#x27;s consider the HTML and CSS for a <a href="/forms/">Stacked Form</a>:</p><h4>Stacked Form: HTML</h4><p>A stacked form is created by adding two class names, <code>pure-form</code> and <code>pure-form-stacked</code>.</p><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form pure-form-stacked&quot;</span>&gt;</span><span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div><h4>Stacked Form: CSS</h4><p>The two class names serve different purposes. One is used as a general selector to group common rules for all forms, while the other defines specific rules for a stacked form.</p><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code>/*
+    Standard rules that all Pure Forms have. This includes rules for
+    styling .pure-form &amp;lt;inputs&amp;gt;, &amp;lt;fieldsets&amp;gt;, and &amp;lt;legends&amp;gt;, as well as layout
+    rules such as vertical alignments.
+*/
+.pure-form { ... }
+
+/*
+    Specific rules that apply to stacked forms. This includes rules
+    such as taking child &amp;lt;input&amp;gt; elements and making them display: block
+    for the stacked effect.
+*/
+.pure-form-stacked  { ... }</code></pre></div></div><h2 id="extending-pure" class="content-subhead">Extending Pure<a href="#extending-pure" class="content-link" title="Heading anchor"></a></h2><p>When you&#x27;re extending Pure, we recommend that you follow this convention. For instance, if you wanted to create a new type of form, your HTML and CSS should look something like this:</p><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;form-custom pure-form&quot;</span>&gt;</span><span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code>/* add your custom styles in this selector */
+.form-custom { ... }</code></pre></div></div><p>One common task that you may wish to do is to style buttons so they look different. The <a href="/buttons/">Pure Button Documentation</a> has some examples on how you can create buttons with custom sizes and styles by adopting this modular architecture.</p><h2 id="pure-bootstrap-javascript" class="content-subhead">Pure + Bootstrap + JavaScript<a href="#pure-bootstrap-javascript" class="content-link" title="Heading anchor"></a></h2><p>Pure plays well with other libraries, including Bootstrap and jQuery. As a developer, you can pull in Pure as a foundational CSS framework, and then include specific Bootstrap or jQuery modules that your application may require. There are several benefits to doing this:</p><ul><li><p>Your website or webapp&#x27;s CSS will be a lot smaller — up to <em>5X smaller</em> in some cases!</p></li><li><p>You get Pure&#x27;s minimalist look that&#x27;s easy to build on top of. No need to overwrite styles!</p></li><li><p>You can take advantage of Bootstrap&#x27;s ecosystem without pulling in a monolithic Bootstrap CSS file.</p></li></ul><p>For example, here&#x27;s a Bootstrap Modal. It&#x27;s created by including the Pure CSS Rollup, and just adding Bootstrap&#x27;s <a href="/css/bootstrap/modal.css"><code>modal.css</code></a> along with the jQuery plugin.</p><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#408080;font-style:italic">&lt;!-- Button to trigger modal --&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">p</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">a</span> <span class="hljs-attr">href</span>=<span style="color:#219161">&quot;#myModal&quot;</span> <span class="hljs-attr">role</span>=<span style="color:#219161">&quot;button&quot;</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;pure-button-primary pure-button&quot;</span> <span class="hljs-attr">data-toggle</span>=<span style="color:#219161">&quot;modal&quot;</span>&gt;</span>
+    Launch Pure + Bootstrap Modal
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">a</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">p</span>&gt;</span>
+
+<span style="color:#408080;font-style:italic">&lt;!-- Modal --&gt;</span>
+<span style="color:#408080;font-style:italic">&lt;!--
+    * Bootstrap v2.3.2
+    *
+    * Copyright 2012 Twitter, Inc
+    * Licensed under the Apache License v2.0
+    * http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Designed and built with all the love in the world @twitter by @mdo and @fat.
+    --&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;myModal&quot;</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;modal hide fade&quot;</span> <span class="hljs-attr">tabindex</span>=<span style="color:#219161">&quot;-1&quot;</span> <span class="hljs-attr">role</span>=<span style="color:#219161">&quot;dialog&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span style="color:#219161">&quot;myModalLabel&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span style="color:#219161">&quot;true&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;modal-header&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">h1</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;myModalLabel&quot;</span>&gt;</span>A Bootstrap Modal with Pure<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">h1</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;modal-body&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">p</span>&gt;</span>
+            This modal is launched by including <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">em</span>&gt;</span>just<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">em</span>&gt;</span> the <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">code</span>&gt;</span>modal.css<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">code</span>&gt;</span> and <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">code</span>&gt;</span>modal.js<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">code</span>&gt;</span> file from Bootstrap, and including Pure to drive all low-level styles. The result is a fully-functional Modal using just a fraction of the CSS.
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">p</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;pure-form pure-form-stacked&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>A Stacked Form<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;email&quot;</span>&gt;</span>Email<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;email&quot;</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Email&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;password&quot;</span>&gt;</span>Password<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;password&quot;</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;password&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Password&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;state&quot;</span>&gt;</span>State<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">select</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;state&quot;</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>AL<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>CA<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>IL<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">select</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;pure-checkbox&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;checkbox&quot;</span>&gt;</span> Remember me
+            <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;modal-footer&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;pure-button&quot;</span> <span class="hljs-attr">data-dismiss</span>=<span style="color:#219161">&quot;modal&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span style="color:#219161">&quot;true&quot;</span>&gt;</span>Close<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">className</span>=<span style="color:#219161">&quot;pure-button pure-button-primary&quot;</span>&gt;</span>Submit<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">script</span> <span class="hljs-attr">src</span>=<span style="color:#219161">&quot;//code.jquery.com/jquery-1.9.1.js&quot;</span>&gt;</span><span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">script</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">script</span> <span class="hljs-attr">src</span>=<span style="color:#219161">&quot;//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js&quot;</span>&gt;</span><span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">script</span>&gt;</span></code></pre></div></div></div><div class="footer"><div class="legal pure-g"><div class="pure-u-1 u-sm-1-2"><p class="legal-license">This site is built with ❤️ using Pure v1.0.1<br>All code on this site is licensed under the <a href="https://github.com/pure-css/purecss.github.io/blob/master/LICENSE">Yahoo BSD License</a> unless otherwise stated.</p></div><div class="pure-u-1 u-sm-1-2"><ul class="legal-links"><li><a href="https://github.com/pure-css/purecss.github.io/">GitHub Project</a></li><li><a href="https://hackerone.com/yahoo/">Security Contact Info</a></li></ul><p class="legal-copyright">© 2014 - Present Yahoo! Inc. All rights reserved.</p></div></div></div></div></div>
+</div>
+
+<script src="/styles.4d4e0bac.js"></script>
+
+<script src="/runtime~main.9a1ae503.js"></script>
+
+<script src="/main.fc1c45a0.js"></script>
+
+<script src="/common.5d6269e6.js"></script>
+
+<script src="/982b1836.a0369f57.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.50">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-41480445-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+<title data-react-helmet="true">Forms - Pure</title>
+
+<meta data-react-helmet="true" charset="utf-8"><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-react-helmet="true" property="og:title" content="Forms - Pure"><meta data-react-helmet="true" name="description" content="Simple CSS for HTML forms."><meta data-react-helmet="true" property="og:description" content="Simple CSS for HTML forms."><meta data-react-helmet="true" name="twitter:card" content="summary_large_image">
+
+<link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+
+
+<link rel="stylesheet" href="/styles.35eb99fd.css">
+
+
+<link rel="preload" href="/styles.4d4e0bac.js" as="script">
+
+<link rel="preload" href="/runtime~main.9a1ae503.js" as="script">
+
+<link rel="preload" href="/main.fc1c45a0.js" as="script">
+
+<link rel="preload" href="/common.5d6269e6.js" as="script">
+
+<link rel="preload" href="/2.f61cec08.js" as="script">
+
+<link rel="preload" href="/bbba8806.32a0b4e1.js" as="script">
+
+</head>
+<body>
+
+<div id="__docusaurus">
+<div id="layout"><a href="#menu" id="menuLink" class="menu-link"><span></span></a><div id="menu"><div class="pure-menu"><a aria-current="page" class="pure-menu-heading active" href="/">Pure</a><ul class="pure-menu-list"><li class="pure-menu-item"><a class="pure-menu-link" href="/start/">Get Started</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/layouts/">Layouts</a></li><li class="pure-menu-item menu-item-divided"><a class="pure-menu-link" href="/base/">Base</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/grids/">Grids</a></li><li class="pure-menu-item"><a aria-current="page" class="pure-menu-link active" href="/forms/">Forms</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/buttons/">Buttons</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/tables/">Tables</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/menus/">Menus</a></li><li class="pure-menu-item menu-item-divided"><a class="pure-menu-link" href="/tools/">Tools</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/customize/">Customize</a></li><li class="pure-menu-item"><a class="pure-menu-link" href="/extend/">Extend</a></li><li class="pure-menu-item"><a href="http://blog.purecss.io/" class="pure-menu-link">Blog</a></li><li class="pure-menu-item"><a href="https://github.com/pure-css/pure/releases/" class="pure-menu-link">Releases</a></li></ul></div></div><div id="main" class="forms"><div class="header"><h1>Forms</h1><h2>Simple CSS for HTML forms.</h2></div><div class="content"><h2 id="default-form" class="content-subhead">Default Form<a href="#default-form" class="content-link" title="Heading anchor"></a></h2><p>To create a default inline form, add the <code>pure-form</code> classname to any <code>&lt;form&gt;</code> element.</p><div class="example"><div><form class="pure-form">
+    <fieldset>
+        <legend>A compact inline form</legend>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <label for="default-remember">
+            <input type="checkbox" id="default-remember">Remember me</label>
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>A compact inline form<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;email&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Email&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;password&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Password&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;default-remember&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;default-remember&quot;</span> /&gt;</span>Remember me<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-button pure-button-primary&quot;</span>&gt;</span>Sign in<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="stacked-form" class="content-subhead">Stacked Form<a href="#stacked-form" class="content-link" title="Heading anchor"></a></h2><p>To create a stacked form with input elements below the labels, add the <code>pure-form-stacked</code> classname to a <code>&lt;form&gt;</code> element alongside <code>pure-form</code>.</p><div class="example"><div><form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>A Stacked Form</legend>
+        <label for="stacked-email">Email</label>
+        <input type="email" id="stacked-email" placeholder="Email">
+        <span class="pure-form-message">This is a required field.</span>
+        <label for="stacked-password">Password</label>
+        <input type="password" id="stacked-password" placeholder="Password">
+        <label for="stacked-state">State</label>
+        <select id="stacked-state">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+        </select>
+        <label for="stacked-remember" class="pure-checkbox">
+            <input type="checkbox" id="stacked-remember"> Remember me</label>
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form pure-form-stacked&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>A Stacked Form<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;stacked-email&quot;</span>&gt;</span>Email<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;stacked-email&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Email&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">span</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form-message&quot;</span>&gt;</span>This is a required field.<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">span</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;stacked-password&quot;</span>&gt;</span>Password<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;stacked-password&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Password&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;stacked-state&quot;</span>&gt;</span>State<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">select</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;stacked-state&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>AL<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>CA<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>IL<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">select</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;stacked-remember&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-checkbox&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;stacked-remember&quot;</span> /&gt;</span> Remember me<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-button pure-button-primary&quot;</span>&gt;</span>Sign in<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="aligned-form" class="content-subhead">Aligned Form<a href="#aligned-form" class="content-link" title="Heading anchor"></a></h2><p>To create an aligned form, add the <code>pure-form-aligned</code> classname to a <code>&lt;form&gt;</code> element alongside <code>pure-form</code>. In an aligned form, the labels are right-aligned against the form input controls, but on smaller screens revert to a <a aria-current="page" class="active" href="/forms/#stacked-form">stacked form</a>.</p><div class="example"><div><form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="aligned-name">Username</label>
+            <input id="aligned-name" placeholder="Username">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+        <div class="pure-control-group">
+            <label for="aligned-password">Password</label>
+            <input type="password" id="aligned-password" placeholder="Password">
+        </div>
+        <div class="pure-control-group">
+            <label for="aligned-email">Email Address</label>
+            <input type="email" id="aligned-email" placeholder="Email Address">
+        </div>
+        <div class="pure-control-group">
+            <label for="aligned-foo">Supercalifragilistic Label</label>
+            <input id="aligned-foo" placeholder="Enter something here...">
+        </div>
+        <div class="pure-controls">
+            <label for="aligned-cb" class="pure-checkbox">
+                <input type="checkbox" id="aligned-cb"> I&#x27;ve read the terms and conditions</label>
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form pure-form-aligned&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-control-group&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;aligned-name&quot;</span>&gt;</span>Username<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;aligned-name&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Username&quot;</span> /&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">span</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form-message-inline&quot;</span>&gt;</span>This is a required field.<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">span</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-control-group&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;aligned-password&quot;</span>&gt;</span>Password<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;aligned-password&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Password&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-control-group&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;aligned-email&quot;</span>&gt;</span>Email Address<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;aligned-email&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Email Address&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-control-group&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;aligned-foo&quot;</span>&gt;</span>Supercalifragilistic Label<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;aligned-foo&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Enter something here...&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-controls&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;aligned-cb&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-checkbox&quot;</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;aligned-cb&quot;</span> /&gt;</span> I&amp;#x27;ve read the terms and conditions<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-button pure-button-primary&quot;</span>&gt;</span>Submit<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="multi-column-form-with-pure-grids" class="content-subhead">Multi-Column Form (with Pure Grids)<a href="#multi-column-form-with-pure-grids" class="content-link" title="Heading anchor"></a></h2><p>To create multi-column forms, include your form elements within a <a href="/grids">Pure Grid</a>. Creating responsive multi-column forms (like the example below) requires <a href="/grids/#pure-responsive-grids">Pure Responsive Grids</a> to be present on the page.</p><div class="example"><div><form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>Legend</legend>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-first-name">First Name</label>
+                <input id="multi-first-name" class="pure-u-23-24">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-last-name">Last Name</label>
+                <input id="multi-last-name" class="pure-u-23-24">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-email">E-Mail</label>
+                <input type="email" id="multi-email" class="pure-u-23-24" required="">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-city">City</label>
+                <input id="multi-city" class="pure-u-23-24">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-state">State</label>
+                <select id="multi-state" class="pure-input-1-2">
+                    <option>AL</option>
+                    <option>CA</option>
+                    <option>IL</option>
+                </select>
+            </div>
+        </div>
+        <label for="multi-terms" class="pure-checkbox">
+            <input type="checkbox" id="multi-terms"> I&#x27;ve read the terms and conditions</label>
+        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+    </fieldset>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form pure-form-stacked&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>Legend<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">legend</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-g&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1 pure-u-md-1-3&quot;</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;multi-first-name&quot;</span>&gt;</span>First Name<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;multi-first-name&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-23-24&quot;</span> /&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1 pure-u-md-1-3&quot;</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;multi-last-name&quot;</span>&gt;</span>Last Name<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;multi-last-name&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-23-24&quot;</span> /&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1 pure-u-md-1-3&quot;</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;multi-email&quot;</span>&gt;</span>E-Mail<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;multi-email&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-23-24&quot;</span> <span class="hljs-attr">required</span>=<span style="color:#219161">&quot;&quot;</span> /&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1 pure-u-md-1-3&quot;</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;multi-city&quot;</span>&gt;</span>City<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;multi-city&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-23-24&quot;</span> /&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1 pure-u-md-1-3&quot;</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;multi-state&quot;</span>&gt;</span>State<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">select</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;multi-state&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-2&quot;</span>&gt;</span>
+                    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>AL<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+                    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>CA<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+                    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">option</span>&gt;</span>IL<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">option</span>&gt;</span>
+                <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">select</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;multi-terms&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-checkbox&quot;</span>&gt;</span>
+            <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;multi-terms&quot;</span> /&gt;</span> I&amp;#x27;ve read the terms and conditions<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-button pure-button-primary&quot;</span>&gt;</span>Submit<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="grouped-inputs" class="content-subhead">Grouped Inputs<a href="#grouped-inputs" class="content-link" title="Heading anchor"></a></h2><p>To group sets of text-based input elements, wrap them in a <code>&lt;fieldset&gt;</code> element with a <code>pure-group</code> classname. Grouped inputs work well for sign-up forms and look natural on mobile devices.</p><div class="example"><div><form class="pure-form">
+    <fieldset class="pure-group">
+        <input class="pure-input-1-2" placeholder="Username">
+        <input class="pure-input-1-2" placeholder="Password">
+        <input type="email" class="pure-input-1-2" placeholder="Email">
+    </fieldset>
+    <fieldset class="pure-group">
+        <input class="pure-input-1-2" placeholder="A title">
+        <textarea class="pure-input-1-2" placeholder="Textareas work too"></textarea>
+    </fieldset>
+    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">fieldset</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-group&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-2&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Username&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-2&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Password&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;email&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-2&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Email&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">fieldset</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-group&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-2&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;A title&quot;</span> /&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">textarea</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-2&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Textareas work too&quot;</span>&gt;</span><span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">textarea</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">fieldset</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-button pure-input-1-2 pure-button-primary&quot;</span>&gt;</span>Sign in<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="input-sizing" class="content-subhead">Input Sizing<a href="#input-sizing" class="content-link" title="Heading anchor"></a></h2><p>Input elements have fluid width sizes in a syntax that is similar to <a href="/grids/">Pure Grids</a>. You can apply a <code>pure-input-*</code> class to these elements.</p><div class="example"><div><form class="pure-form">
+    <input class="pure-input-1" placeholder=".pure-input-1">
+    <br>
+    <input class="pure-input-2-3" placeholder=".pure-input-2-3">
+    <br>
+    <input class="pure-input-1-2" placeholder=".pure-input-1-2">
+    <br>
+    <input class="pure-input-1-3" placeholder=".pure-input-1-3">
+    <br>
+    <input class="pure-input-1-4" placeholder=".pure-input-1-4">
+    <br>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-input-1&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">br</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-2-3&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-input-2-3&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">br</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-2&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-input-1-2&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">br</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-3&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-input-1-3&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">br</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1-4&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-input-1-4&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">br</span> /&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><p>You can control input sizing even further by wrapping them in grid containers. In the example below, the <code>&lt;input&gt;</code> elements have a <code>pure-input-1</code> class, but are wrapped in a <code>&lt;div&gt;</code> with a specific grid class.</p><div class="example"><div><form class="pure-form pure-g">
+    <div class="pure-u-1-4">
+        <input class="pure-input-1" placeholder=".pure-u-1-4">
+    </div>
+    <div class="pure-u-3-4">
+        <input class="pure-input-1" placeholder=".pure-u-3-4">
+    </div>
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" placeholder=".pure-u-1-2">
+    </div>
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" placeholder=".pure-u-1-2">
+    </div>
+    <div class="pure-u-1-8">
+        <input class="pure-input-1" placeholder=".pure-u-1-8">
+    </div>
+    <div class="pure-u-1-8">
+        <input class="pure-input-1" placeholder=".pure-u-1-8">
+    </div>
+    <div class="pure-u-1-4">
+        <input class="pure-input-1" placeholder=".pure-u-1-4">
+    </div>
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" placeholder=".pure-u-1-2">
+    </div>
+    <div class="pure-u-1-5">
+        <input class="pure-input-1" placeholder=".pure-u-1-5">
+    </div>
+    <div class="pure-u-2-5">
+        <input class="pure-input-1" placeholder=".pure-u-2-5">
+    </div>
+    <div class="pure-u-2-5">
+        <input class="pure-input-1" placeholder=".pure-u-2-5">
+    </div>
+    <div class="pure-u-1">
+        <input class="pure-input-1" placeholder=".pure-u-1">
+    </div>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form pure-g&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-4&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-4&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-3-4&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-3-4&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-2&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-2&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-2&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-2&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-8&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-8&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-8&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-8&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-4&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-4&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-2&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-2&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1-5&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1-5&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-2-5&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-2-5&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-2-5&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-2-5&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">div</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-u-1&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-1&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;.pure-u-1&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">div</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="required-inputs" class="content-subhead">Required Inputs<a href="#required-inputs" class="content-link" title="Heading anchor"></a></h2><p>To mark a form control as required, add the <code>required</code> attribute.</p><div class="example"><div><form class="pure-form">
+    <input type="email" placeholder="Requires an email" required="">
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;email&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Requires an email&quot;</span> <span class="hljs-attr">required</span>=<span style="color:#219161">&quot;&quot;</span> /&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="disabled-inputs" class="content-subhead">Disabled Inputs<a href="#disabled-inputs" class="content-link" title="Heading anchor"></a></h2><p>To disable a form control, add the <code>disabled</code> attribute.</p><div class="example"><div><form class="pure-form">
+    <input placeholder="Disabled input here..." disabled="">
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">placeholder</span>=<span style="color:#219161">&quot;Disabled input here...&quot;</span> <span class="hljs-attr">disabled</span>=<span style="color:#219161">&quot;&quot;</span> /&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="read-only-inputs" class="content-subhead">Read-Only Inputs<a href="#read-only-inputs" class="content-link" title="Heading anchor"></a></h2><p>To make a form input read-only, add the <code>readonly</code> attribute. The difference between <code>disabled</code> and <code>readonly</code> is read-only inputs are still focusable. This allows people to interact with the input and select its text, whereas disabled controls are not interactive.</p><div class="example"><div><form class="pure-form">
+    <input value="Readonly input here..." readonly="">
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">value</span>=<span style="color:#219161">&quot;Readonly input here...&quot;</span> <span class="hljs-attr">readonly</span>=<span style="color:#219161">&quot;&quot;</span> /&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="rounded-inputs" class="content-subhead">Rounded Inputs<a href="#rounded-inputs" class="content-link" title="Heading anchor"></a></h2><p>To display a form control with rounded corners, add the <code>pure-input-rounded</code> classname.</p><div class="example"><div><form class="pure-form">
+    <input class="pure-input-rounded">
+    <button type="submit" class="pure-button">Search</button>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-input-rounded&quot;</span> /&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">button</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-button&quot;</span>&gt;</span>Search<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">button</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div><h2 id="checkboxes-and-radios" class="content-subhead">Checkboxes and Radios<a href="#checkboxes-and-radios" class="content-link" title="Heading anchor"></a></h2><p>To normalize and align checkboxes and radio inputs, add the <code>pure-checkbox</code> or <code>pure-radio</code> classname.</p><div class="example"><div><form class="pure-form">
+    <label for="checkbox-radio-option-one" class="pure-checkbox">
+        <input type="checkbox" id="checkbox-radio-option-one">Here&#x27;s option one.</label>
+    <label for="checkbox-radio-option-two" class="pure-radio">
+        <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" value="option1" checked="">Here&#x27;s a radio button. You can choose this one..</label>
+    <label for="checkbox-radio-option-three" class="pure-radio">
+        <input type="radio" id="checkbox-radio-option-three" name="optionsRadios" value="option2">..Or this one!</label>
+</form></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code><span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">form</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-form&quot;</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;checkbox-radio-option-one&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-checkbox&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;checkbox-radio-option-one&quot;</span> <span class="hljs-attr">value</span>=<span style="color:#219161">&quot;&quot;</span> /&gt;</span>Here&amp;#x27;s option one.<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;checkbox-radio-option-two&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-radio&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;checkbox-radio-option-two&quot;</span> <span class="hljs-attr">name</span>=<span style="color:#219161">&quot;optionsRadios&quot;</span> <span class="hljs-attr">value</span>=<span style="color:#219161">&quot;option1&quot;</span> <span class="hljs-attr">checked</span>=<span style="color:#219161">&quot;&quot;</span> /&gt;</span>Here&amp;#x27;s a radio button. You can choose this one..<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+    <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">label</span> <span class="hljs-attr">for</span>=<span style="color:#219161">&quot;checkbox-radio-option-three&quot;</span> <span class="hljs-attr">class</span>=<span style="color:#219161">&quot;pure-radio&quot;</span>&gt;</span>
+        <span style="color:#000080;font-weight:normal">&lt;<span style="color:#000080;font-weight:normal">input</span> <span class="hljs-attr">type</span>=<span style="color:#219161">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span style="color:#219161">&quot;checkbox-radio-option-three&quot;</span> <span class="hljs-attr">name</span>=<span style="color:#219161">&quot;optionsRadios&quot;</span> <span class="hljs-attr">value</span>=<span style="color:#219161">&quot;option2&quot;</span> /&gt;</span>..Or this one!<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">label</span>&gt;</span>
+<span style="color:#000080;font-weight:normal">&lt;/<span style="color:#000080;font-weight:normal">form</span>&gt;</span></code></pre></div></div></div></div><div class="footer"><div class="legal pure-g"><div class="pure-u-1 u-sm-1-2"><p class="legal-license">This site is built with ❤️ using Pure v1.0.1<br>All code on this site is licensed under the <a href="https://github.com/pure-css/purecss.github.io/blob/master/LICENSE">Yahoo BSD License</a> unless otherwise stated.</p></div><div class="pure-u-1 u-sm-1-2"><ul class="legal-links"><li><a href="https://github.com/pure-css/purecss.github.io/">GitHub Project</a></li><li><a href="https://hackerone.com/yahoo/">Security Contact Info</a></li></ul><p class="legal-copyright">© 2014 - Present Yahoo! Inc. All rights reserved.</p></div></div></div></div></div>
+</div>
+
+<script src="/styles.4d4e0bac.js"></script>
+
+<script src="/runtime~main.9a1ae503.js"></script>
+
+<script src="/main.fc1c45a0.js"></script>
+
+<script src="/common.5d6269e6.js"></script>
+
+<script src="/2.f61cec08.js"></script>
+
+<script src="/bbba8806.32a0b4e1.js"></script>
+
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 /*!
-Pure v2.0.0
+Pure v2.0.1
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE.md
@@ -1254,7 +1254,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     /* a little extra padding for this style to allow for scrollbars */
     padding: .5em 0;
 }

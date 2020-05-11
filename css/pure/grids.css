@@ -30,19 +30,16 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 
     /* Use flexbox when possible to avoid `letter-spacing` side-effects. */
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
 
     /* Prevents distributing space between rows */
-    -webkit-align-content: flex-start;
-        -ms-flex-line-pack: start;
-            align-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
 }
 
 /* IE10 display: -ms-flexbox (and display: flex in IE 11) does not work inside a table; fall back to block and rely on font hack */

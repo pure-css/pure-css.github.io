@@ -33,7 +33,7 @@
     }
     
     function handleEvent(e) {
-        if (e.target.id === menuLink.id) {
+        if (menuLink.contains(e.target)) {
             return toggleAll(e);
         }
         

@@ -1,5 +1,5 @@
 /*!
-Pure v2.0.4
+Pure v2.0.5
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE
@@ -155,7 +155,6 @@ https://github.com/pure-css/pure/blob/master/LICENSE
 }
 
 .pure-menu-link,
-.pure-menu-disabled,
 .pure-menu-heading {
     padding: .5em 1em;
 }
@@ -166,6 +165,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE
 
 .pure-menu-disabled .pure-menu-link:hover {
     background-color: transparent;
+    cursor: default;
 }
 
 .pure-menu-active > .pure-menu-link,

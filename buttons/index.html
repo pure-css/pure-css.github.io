@@ -8,7 +8,7 @@
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <script src="https://kit.fontawesome.com/f7f35653b1.js" defer="defer"></script><link rel="stylesheet" href="/assets/css/styles.98193cae.css">
-<link rel="preload" href="/assets/js/runtime~main.8c5299e3.js" as="script">
+<link rel="preload" href="/assets/js/runtime~main.27d4937b.js" as="script">
 <link rel="preload" href="/assets/js/main.674f3c32.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
@@ -22,7 +22,7 @@
 </span><span>&lt;</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">class</span><span>=&quot;</span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span>-</span><span style="color:#990073">active</span><span>&quot;&gt;</span><span style="color:#990073">An</span><span> </span><span style="color:#990073">Active</span><span> </span><span style="color:#990073">Button</span><span>&lt;/</span><span style="color:#990073">button</span><span>&gt;</span></code></pre></div></div></div><h2 id="primary-buttons" class="content-subhead">Primary Buttons<a href="#primary-buttons" class="content-link" title="Heading anchor"></a></h2><p>To indicate that a button represents a primary action, add the <code>pure-button-primary</code> classname alongside <code>pure-button</code>.</p><div class="example"><div><a class="pure-button pure-button-primary" href="#">A Primary Button</a>
 <button class="pure-button pure-button-primary">A Primary Button</button></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code class="language-html" style="white-space:pre"><span>&lt;a </span><span style="color:#954121">class</span><span>=&quot;</span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span>-</span><span style="color:#990073">primary</span><span>&quot; </span><span style="color:#990073">href</span><span>=&quot;#&quot;&gt;</span><span style="color:#990073">A</span><span> </span><span style="color:#990073">Primary</span><span> </span><span style="color:#990073">Button</span><span>&lt;/</span><span style="color:#990073">a</span><span>&gt;
 </span><span>&lt;</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">class</span><span>=&quot;</span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span>-</span><span style="color:#990073">primary</span><span>&quot;&gt;</span><span style="color:#990073">A</span><span> </span><span style="color:#990073">Primary</span><span> </span><span style="color:#990073">Button</span><span>&lt;/</span><span style="color:#990073">button</span><span>&gt;</span></code></pre></div></div></div><h2 id="customizing-buttons" class="content-subhead">Customizing Buttons<a href="#customizing-buttons" class="content-link" title="Heading anchor"></a></h2><p>Thanks to Pure&#x27;s minimal styling, it is easy to build off of the generic Pure button and create customized buttons for your own application.</p><p>To customize button styles, you should group your custom CSS into a class such as <code>button-foo</code>, which you can then add to an element that already has the <code>pure-button</code> classname. Here are some examples.</p><h3 class="content-subhead">Colored buttons with rounded corners</h3><div class="example"><div><div>
-    <style scoped="">
+    <style>
         .button-success,
         .button-error,
         .button-warning,
@@ -57,7 +57,7 @@
     <button class="button-warning pure-button">Warning Button</button>
     <button class="button-secondary pure-button">Secondary Button</button>
 </div></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code class="language-html" style="white-space:pre"><span>&lt;</span><span style="color:#954121">div</span><span>&gt;
-</span>    &lt;style scoped=&quot;&quot;&gt;
+</span>    &lt;style&gt;
 <span>        </span><span style="color:#19469d">.button-success</span><span>,
 </span><span>        </span><span style="color:#19469d">.button-error</span><span>,
 </span><span>        </span><span style="color:#19469d">.button-warning</span><span>,
@@ -92,7 +92,7 @@
 </span><span>    &lt;</span><span style="color:#954121">button</span><span> class=&quot;</span><span style="color:#954121">button</span><span>-warning pure-</span><span style="color:#954121">button</span><span>&quot;&gt;Warning </span><span style="color:#954121">Button</span><span>&lt;/</span><span style="color:#954121">button</span><span>&gt;
 </span><span>    &lt;</span><span style="color:#954121">button</span><span> class=&quot;</span><span style="color:#954121">button</span><span>-secondary pure-</span><span style="color:#954121">button</span><span>&quot;&gt;Secondary </span><span style="color:#954121">Button</span><span>&lt;/</span><span style="color:#954121">button</span><span>&gt;
 </span><span>&lt;/</span><span style="color:#954121">div</span><span>&gt;</span></code></pre></div></div></div><h3 class="content-subhead">Buttons with different sizes</h3><div class="example"><div><div>
-    <style scoped="">
+    <style>
         .button-xsmall {
             font-size: 70%;
         }
@@ -115,8 +115,8 @@
     <button class="button-large pure-button">Large Button</button>
     <button class="button-xlarge pure-button">Extra Large Button</button>
 </div></div><div><div class="code"><pre style="display:block;overflow-x:auto;padding:0.5em;color:#000;background:#f8f8ff"><code class="language-html" style="white-space:pre"><span>&lt;div&gt;
-</span><span>    &lt;style scoped=</span><span style="color:#219161">&quot;&quot;</span><span>&gt;
-</span>        .button-xsmall {
+</span>    &lt;style&gt;
+<!-- -->        .button-xsmall {
 <span>            font-size: </span><span style="color:#40a070">70</span><span>%;
 </span>        }
 <!-- -->
@@ -156,7 +156,7 @@
 </span><span>    &lt;</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">class</span><span>=&quot;</span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span>&quot;&gt;</span><span style="color:#990073">A</span><span> </span><span style="color:#990073">Pure</span><span> </span><span style="color:#990073">Button</span><span>&lt;/</span><span style="color:#990073">button</span><span>&gt;
 </span><span>    &lt;</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">class</span><span>=&quot;</span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span> </span><span style="color:#990073">pure</span><span>-</span><span style="color:#990073">button</span><span>-</span><span style="color:#990073">active</span><span>&quot;&gt;</span><span style="color:#990073">A</span><span> </span><span style="color:#990073">Pure</span><span> </span><span style="color:#990073">Button</span><span>&lt;/</span><span style="color:#990073">button</span><span>&gt;
 </span><span>&lt;/</span><span style="color:#990073">div</span><span>&gt;</span></code></pre></div></div></div></div><div class="footer"><div class="legal pure-g"><div class="pure-u-1 u-sm-1-2"><p class="legal-license">This site is built with ❤️ using Pure v<!-- -->2.1.0<br>All code on this site is licensed under the <a href="https://github.com/pure-css/pure/blob/master/LICENSE">Yahoo BSD License</a> unless otherwise stated.</p></div><div class="pure-u-1 u-sm-1-2"><ul class="legal-links"><li><a href="https://github.com/pure-css/pure/">GitHub Project</a></li><li><a href="https://hackerone.com/yahoo/">Security Contact Info</a></li></ul><p class="legal-copyright">© 2014 - Present Yahoo Inc. All rights reserved.</p></div></div></div></div></div></div>
-<script src="/assets/js/runtime~main.8c5299e3.js"></script>
+<script src="/assets/js/runtime~main.27d4937b.js"></script>
 <script src="/assets/js/main.674f3c32.js"></script>
 </body>
 </html>

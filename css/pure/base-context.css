@@ -1,5 +1,5 @@
 /*!
-Pure v2.2.0
+Pure v3.0.0
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
 https://github.com/pure-css/pure/blob/master/LICENSE
@@ -63,8 +63,7 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
  */
 
 .pure hr {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     /* 1 */
     height: 0;
     /* 1 */
@@ -268,8 +267,7 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
  */
 
 .pure legend {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     /* 1 */
     color: inherit;
     /* 2 */
@@ -306,8 +304,7 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 
 .pure [type="checkbox"],
 .pure [type="radio"] {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     /* 1 */
     padding: 0;
     /* 2 */

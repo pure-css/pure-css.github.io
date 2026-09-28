@@ -1,8 +1,8 @@
 /*!
-Pure v3.0.0
+Pure v3.1.0
 Copyright 2013 Yahoo!
 Licensed under the BSD License.
-https://github.com/pure-css/pure/blob/master/LICENSE
+https://github.com/pure-css/pure/blob/main/LICENSE
 */
 /*!
 normalize.css v | MIT License | https://necolas.github.io/normalize.css/
@@ -383,7 +383,7 @@ html {
 }
 
 /**
- * Add this class to an image to make it fit within it's fluid parent wrapper while maintaining
+ * Add this class to an image to make it fit within its fluid parent wrapper while maintaining
  * aspect ratio.
  */
 .pure-img {

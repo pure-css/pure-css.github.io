@@ -1,0 +1,1 @@
+"use strict";(Array.isArray(globalThis.webpackChunkpure)?globalThis.webpackChunkpure:globalThis.webpackChunkpure=[]).push([[61],{4180(a){a.exports=JSON.parse('{"N":"localStorage","M":""}')}}]);
